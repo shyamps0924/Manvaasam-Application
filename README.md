@@ -119,7 +119,4 @@ To build a technology-driven agricultural ecosystem that empowers farmers with d
 
 - Swagger / OpenAPI
 
----
 
-# Project Structure
->>>>>>> be6768719dfb5d9270c944d3662d2eb79aff4f55
