@@ -1,5 +1,5 @@
-# AI Service
+# ai-service
 
-Purpose: Placeholder for the future AI service.
+Purpose: Stores AI and machine learning assets for Manvaasam.
 
-What will eventually be stored here: AI workflows, model integrations, service APIs, tests, and AI-specific documentation.
+What will be stored here: Datasets, trained models, notebooks, experiments, training workflows, and inference assets.

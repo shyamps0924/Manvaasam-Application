@@ -1,5 +1,5 @@
-# Database
+# database
 
-Purpose: Placeholder for future database assets.
+Purpose: Stores database planning and operational assets.
 
-What will eventually be stored here: Diagrams, migrations, seed data, schema documentation, and data governance notes.
+What will be stored here: Diagrams, migrations, seed data, schemas, backups, and SQL files.

@@ -1,5 +1,5 @@
-# Infrastructure
+# infrastructure
 
-Purpose: Placeholder for future infrastructure assets.
+Purpose: Stores infrastructure planning and deployment assets.
 
-What will eventually be stored here: Docker, nginx, deployment, monitoring, and environment infrastructure definitions.
+What will be stored here: Docker notes, Nginx configuration plans, monitoring assets, deployment files, GitHub Actions assets, and Terraform assets.

@@ -1,5 +1,5 @@
-# Testing
+# testing
 
-Purpose: Placeholder for future test assets and test plans.
+Purpose: Stores testing plans, assets, and test-suite organization.
 
-What will eventually be stored here: API, mobile, performance, security, and quality assurance test resources.
+What will be stored here: Unit, integration, end-to-end, API, performance, security, and mobile testing assets.

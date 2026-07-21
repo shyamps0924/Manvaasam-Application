@@ -1,5 +1,5 @@
-# Assets
+# assets
 
-Purpose: Placeholder for shared visual and brand assets.
+Purpose: Stores brand, media, and presentation assets.
 
-What will eventually be stored here: Branding, icons, illustrations, images, mockups, and presentations.
+What will be stored here: Branding, icons, images, illustrations, mockups, presentations, audio, and videos.

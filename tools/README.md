@@ -1,5 +1,5 @@
-# Tools
+# tools
 
-Purpose: Placeholder for developer and API tooling.
+Purpose: Stores developer and API tooling assets.
 
-What will eventually be stored here: Postman collections, Swagger documentation, and supporting tool configurations.
+What will be stored here: Postman collections, Swagger specifications, Insomnia workspaces, and helper scripts.
