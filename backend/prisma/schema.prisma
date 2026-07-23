@@ -1,0 +1,85 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Language {
+  ENGLISH
+  TAMIL
+}
+
+enum FarmerType {
+  INDIVIDUAL
+  FPO_MEMBER
+}
+
+enum OwnershipType {
+  OWN
+  LEASE
+}
+
+enum LandUnit {
+  ACRE
+  CENT
+}
+
+model User {
+  id                String          @id @default(uuid())
+  fullName          String
+  mobileNumber      String          @unique
+  preferredLanguage Language        @default(TAMIL)
+
+  farmerProfile     FarmerProfile?
+
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+}
+
+model FarmerProfile {
+  id                 String         @id @default(uuid())
+
+  userId             String         @unique
+  user               User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  farmerType         FarmerType
+
+  uzhavanId          String?
+  fpoMembershipId    String?
+  aadhaarNumber      String?
+
+  village            String
+  district           String
+  state              String         @default("Tamil Nadu")
+  pinCode            String
+
+  landDetail         LandDetail?
+
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+}
+
+model LandDetail {
+  id                 String         @id @default(uuid())
+
+  farmerProfileId    String         @unique
+  farmerProfile      FarmerProfile  @relation(fields: [farmerProfileId], references: [id], onDelete: Cascade)
+
+  ownershipType      OwnershipType
+
+  landArea           Decimal        @db.Decimal(10,2)
+
+  landUnit           LandUnit
+
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+}
